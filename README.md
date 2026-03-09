@@ -19,7 +19,7 @@ This project is the technical implementation of the following published research
 
 *Watch the full walkthrough of the ACSPM Cloud Security HUD in action:*
 
-[![Demo Video](https://img.shields.io/badge/▶_Watch_Demo-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://youtu.be/VRta7eOvpFU)
+[![Demo Video](https://img.shields.io/badge/▶_Watch_Demo-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://youtu.be/edIdzt58nY0))
 
 
 # Architecture Diagram
