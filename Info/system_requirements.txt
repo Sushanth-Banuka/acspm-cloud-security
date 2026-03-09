@@ -1,0 +1,54 @@
+SYSTEM REQUIREMENTS
+===================
+Project Title: Autonomous Cloud Security Posture Management (ACSPM)
+
+1. SOFTWARE REQUIREMENTS
+------------------------
+To successfully run and deploy this application, the following software environment is required:
+
+A. Operating System
+   - Windows 10/11, macOS, or Linux (Ubuntu/Debian recommended).
+   - Any OS capable of running Python 3.x.
+
+B. Programming Language
+   - Python 3.8 or higher.
+
+C. Frameworks & Libraries (Python Packages)
+   The application relies on the following key libraries (listed in requirements.txt):
+   - streamlit: For the web interface and frontend logic.
+   - pandas: For data manipulation and incident history analysis.
+   - fpdf: For generating downloadable PDF incident reports.
+   - requests: For making HTTP calls to external Threat Intelligence APIs.
+   - altair: For data visualization (charts and metrics).
+   
+   *Note: Standard libraries such as `sqlite3`, `re`, `json`, `hashlib`, and `time` are also used (pre-installed with Python).*
+
+D. External Dependencies / Configuration
+   - AbuseIPDB API Key: Required for real-time IP reputation checks.
+   - SMTP Server Credentials: Required for the automated email alert system (e.g., Gmail SMTP).
+   - Web Browser: Google Chrome, Firefox, or Edge (latest version) to access the Streamlit interface.
+
+2. HARDWARE REQUIREMENTS
+------------------------
+The following are the minimum and recommended hardware specifications:
+
+A. Processor (CPU)
+   - Minimum: Intel Core i3 or equivalent (Dual-Core).
+   - Recommended: Intel Core i5 / AMD Ryzen 5 or better (Quad-Core) for smoother data processing and dashboard rendering.
+
+B. Memory (RAM)
+   - Minimum: 4 GB RAM.
+   - Recommended: 8 GB RAM or higher (especially if processing large log files).
+
+C. Storage (Hard Disk)
+   - 1 GB of free disk space.
+     (The application code is small, but the SQLite database and PDF reports will consume space over time).
+
+D. Network
+   - Active High-Speed Internet Connection.
+     (Crucial for fetching threat intelligence from external APIs and sending email alerts).
+
+3. RUNNING THE APPLICATION
+--------------------------
+To start the application, use the command:
+   streamlit run app.py

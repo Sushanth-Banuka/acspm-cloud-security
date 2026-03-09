@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="620" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#020810"/>
+      <stop offset="100%" style="stop-color:#0D1117"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#00FFCC" opacity="0.8"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FF4444" opacity="0.8"/>
+    </marker>
+    <marker id="arrow-yellow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#E3B341" opacity="0.8"/>
+    </marker>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="620" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <g opacity="0.03" stroke="#00FFCC" stroke-width="0.5">
+    <line x1="0" y1="60" x2="900" y2="60"/> <line x1="0" y1="120" x2="900" y2="120"/>
+    <line x1="0" y1="180" x2="900" y2="180"/> <line x1="0" y1="240" x2="900" y2="240"/>
+    <line x1="0" y1="300" x2="900" y2="300"/> <line x1="0" y1="360" x2="900" y2="360"/>
+    <line x1="0" y1="420" x2="900" y2="420"/> <line x1="0" y1="480" x2="900" y2="480"/>
+    <line x1="0" y1="540" x2="900" y2="540"/>
+    <line x1="90" y1="0" x2="90" y2="620"/>  <line x1="180" y1="0" x2="180" y2="620"/>
+    <line x1="270" y1="0" x2="270" y2="620"/> <line x1="360" y1="0" x2="360" y2="620"/>
+    <line x1="450" y1="0" x2="450" y2="620"/> <line x1="540" y1="0" x2="540" y2="620"/>
+    <line x1="630" y1="0" x2="630" y2="620"/> <line x1="720" y1="0" x2="720" y2="620"/>
+    <line x1="810" y1="0" x2="810" y2="620"/>
+  </g>
+
+  <!-- Left circuit decoration -->
+  <g opacity="0.15" stroke="#00FFCC" stroke-width="1" fill="none">
+    <polyline points="0,200 70,200 70,130 150,130 150,170 210,170"/>
+    <circle cx="70" cy="200" r="3" fill="#00FFCC"/>
+    <circle cx="150" cy="130" r="3" fill="#00FFCC"/>
+    <polyline points="0,320 50,320 50,380 120,380 120,340 180,340"/>
+    <circle cx="50" cy="320" r="3" fill="#00FFCC"/>
+    <circle cx="120" cy="380" r="3" fill="#00FFCC"/>
+  </g>
+
+  <!-- Right circuit decoration -->
+  <g opacity="0.15" stroke="#FF4444" stroke-width="1" fill="none">
+    <polyline points="900,180 820,180 820,250 750,250 750,210 690,210"/>
+    <circle cx="820" cy="180" r="3" fill="#FF4444"/>
+    <circle cx="750" cy="250" r="3" fill="#FF4444"/>
+    <polyline points="900,360 840,360 840,300 780,300 780,340 720,340"/>
+    <circle cx="840" cy="360" r="3" fill="#FF4444"/>
+    <circle cx="780" cy="300" r="3" fill="#FF4444"/>
+  </g>
+
+  <!-- Accent bars -->
+  <rect x="0" y="0" width="4" height="620" fill="#00FFCC" opacity="0.6"/>
+  <rect x="896" y="0" width="4" height="620" fill="#FF4444" opacity="0.4"/>
+  <rect x="0" y="0" width="900" height="2" fill="#00FFCC" opacity="0.08"/>
+  <rect x="0" y="618" width="900" height="2" fill="#00FFCC" opacity="0.08"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="19" font-weight="700" fill="#FFFFFF" filter="url(#glow)">ACSPM — Autonomous Cloud Security Posture Management</text>
+  <text x="450" y="54" text-anchor="middle" font-size="10" fill="#8B949E" letter-spacing="3">ARCHITECTURE · Python · Streamlit · AbuseIPDB · SQLite · FPDF · SMTP</text>
+  <line x1="180" y1="60" x2="720" y2="60" stroke="#00FFCC" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- ── LAYER 1: CLIENT ───────────────────────────────────────── -->
+  <text x="450" y="82" text-anchor="middle" font-size="9" fill="#8B949E" letter-spacing="3">CLIENT LAYER</text>
+
+  <!-- Analyst -->
+  <rect x="320" y="88" width="120" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="1.5"/>
+  <text x="380" y="108" text-anchor="middle" font-size="11" font-weight="600" fill="#58A6FF">👤 Tier-1 Analyst</text>
+  <text x="380" y="124" text-anchor="middle" font-size="9" fill="#8B949E">SOC Operator</text>
+
+  <!-- Web Browser -->
+  <rect x="460" y="88" width="120" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="1.5"/>
+  <text x="520" y="108" text-anchor="middle" font-size="11" font-weight="600" fill="#58A6FF">🌐 Web Browser</text>
+  <text x="520" y="124" text-anchor="middle" font-size="9" fill="#8B949E">localhost:8501</text>
+
+  <line x1="440" y1="112" x2="460" y2="112" stroke="#58A6FF" stroke-width="1" opacity="0.5" marker-end="url(#arrow)"/>
+
+  <!-- Arrow down to App Layer -->
+  <line x1="450" y1="136" x2="450" y2="158" stroke="#00FFCC" stroke-width="1.5" opacity="0.6" marker-end="url(#arrow)"/>
+
+  <!-- ── LAYER 2: APPLICATION LAYER ────────────────────────────── -->
+  <text x="450" y="174" text-anchor="middle" font-size="9" fill="#8B949E" letter-spacing="3">APPLICATION LAYER (STREAMLIT)</text>
+
+  <rect x="120" y="180" width="660" height="100" rx="8" fill="#161B22" stroke="#00FFCC" stroke-width="1.5"/>
+
+  <!-- Auth module -->
+  <rect x="135" y="195" width="130" height="70" rx="5" fill="#0D1117" stroke="#00FFCC" stroke-width="1"/>
+  <text x="200" y="215" text-anchor="middle" font-size="10" font-weight="600" fill="#00FFCC">🔐 Auth Portal</text>
+  <text x="200" y="230" text-anchor="middle" font-size="9" fill="#8B949E">Secure Login</text>
+  <text x="200" y="243" text-anchor="middle" font-size="9" fill="#8B949E">SHA-256 Hashing</text>
+  <text x="200" y="256" text-anchor="middle" font-size="9" fill="#8B949E">Session Management</text>
+
+  <!-- Command Center -->
+  <rect x="280" y="195" width="130" height="70" rx="5" fill="#0D1117" stroke="#00FFCC" stroke-width="1"/>
+  <text x="345" y="215" text-anchor="middle" font-size="10" font-weight="600" fill="#00FFCC">⚡ Command Center</text>
+  <text x="345" y="230" text-anchor="middle" font-size="9" fill="#8B949E">HUD Dashboard</text>
+  <text x="345" y="243" text-anchor="middle" font-size="9" fill="#8B949E">Threat Telemetry</text>
+  <text x="345" y="256" text-anchor="middle" font-size="9" fill="#8B949E">Severity Charts</text>
+
+  <!-- Threat Hunting -->
+  <rect x="425" y="195" width="130" height="70" rx="5" fill="#0D1117" stroke="#E3B341" stroke-width="1"/>
+  <text x="490" y="215" text-anchor="middle" font-size="10" font-weight="600" fill="#E3B341">🎯 Threat Hunting</text>
+  <text x="490" y="230" text-anchor="middle" font-size="9" fill="#8B949E">Log Upload/Paste</text>
+  <text x="490" y="243" text-anchor="middle" font-size="9" fill="#8B949E">Regex IP/Email</text>
+  <text x="490" y="256" text-anchor="middle" font-size="9" fill="#8B949E">Extraction Engine</text>
+
+  <!-- Strategic Archives -->
+  <rect x="570" y="195" width="130" height="70" rx="5" fill="#0D1117" stroke="#BC8CFF" stroke-width="1"/>
+  <text x="635" y="215" text-anchor="middle" font-size="10" font-weight="600" fill="#BC8CFF">📁 Strat. Archives</text>
+  <text x="635" y="230" text-anchor="middle" font-size="9" fill="#8B949E">Incident History</text>
+  <text x="635" y="243" text-anchor="middle" font-size="9" fill="#8B949E">Audit Trail</text>
+  <text x="635" y="256" text-anchor="middle" font-size="9" fill="#8B949E">Encrypted SQLite</text>
+
+  <!-- System Config -->
+  <rect x="715" y="195" width="50" height="70" rx="5" fill="#0D1117" stroke="#8B949E" stroke-width="1"/>
+  <text x="740" y="222" text-anchor="middle" font-size="9" font-weight="600" fill="#8B949E">⚙️</text>
+  <text x="740" y="237" text-anchor="middle" font-size="8" fill="#8B949E">Config</text>
+  <text x="740" y="250" text-anchor="middle" font-size="8" fill="#8B949E">API Keys</text>
+  <text x="740" y="263" text-anchor="middle" font-size="8" fill="#8B949E">SMTP</text>
+
+  <!-- Arrows down -->
+  <line x1="310" y1="280" x2="280" y2="318" stroke="#00FFCC" stroke-width="1.5" opacity="0.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="280" x2="450" y2="318" stroke="#E3B341" stroke-width="1.5" opacity="0.5" marker-end="url(#arrow-yellow)"/>
+  <line x1="590" y1="280" x2="620" y2="318" stroke="#00FFCC" stroke-width="1.5" opacity="0.5" marker-end="url(#arrow)"/>
+
+  <!-- ── LAYER 3: LOGIC ENGINE ──────────────────────────────────── -->
+  <text x="450" y="315" text-anchor="middle" font-size="9" fill="#8B949E" letter-spacing="3">LOGIC ENGINE (utils.py)</text>
+
+  <rect x="120" y="322" width="660" height="70" rx="8" fill="#1C2333" stroke="#E3B341" stroke-width="2"/>
+  <text x="450" y="345" text-anchor="middle" font-size="13" font-weight="700" fill="#E3B341">⚙️ Python Logic Engine</text>
+  <text x="450" y="362" text-anchor="middle" font-size="10" fill="#8B949E">Regex Parser (IPv4 + Email) · AbuseIPDB API Handler · Risk Scoring (score &gt; 50 = Critical)</text>
+  <text x="450" y="378" text-anchor="middle" font-size="10" fill="#8B949E">Narrative Generator · SMTP Alert Trigger · FPDF Report Builder · Confidence Score Interpreter</text>
+
+  <!-- Arrows from logic engine -->
+  <line x1="260" y1="392" x2="200" y2="430" stroke="#E3B341" stroke-width="1.5" opacity="0.5" marker-end="url(#arrow-yellow)"/>
+  <line x1="450" y1="392" x2="450" y2="430" stroke="#E3B341" stroke-width="1.5" opacity="0.5" marker-end="url(#arrow-yellow)"/>
+  <line x1="640" y1="392" x2="700" y2="430" stroke="#FF4444" stroke-width="1.5" opacity="0.5" marker-end="url(#arrow-red)"/>
+
+  <!-- ── LAYER 4: DATA + EXTERNAL + OUTPUT ─────────────────────── -->
+  <text x="450" y="428" text-anchor="middle" font-size="9" fill="#8B949E" letter-spacing="3">DATA · EXTERNAL INTELLIGENCE · OUTPUT</text>
+
+  <!-- SQLite -->
+  <rect x="60" y="435" width="250" height="70" rx="6" fill="#0D1117" stroke="#BC8CFF" stroke-width="1.5"/>
+  <text x="185" y="458" text-anchor="middle" font-size="12" font-weight="600" fill="#BC8CFF">🗄 SQLite Database</text>
+  <text x="185" y="474" text-anchor="middle" font-size="9" fill="#8B949E">Users · Incidents · Settings · Configuration</text>
+  <text x="185" y="488" text-anchor="middle" font-size="9" fill="#8B949E">Serverless · Encrypted · Zero Setup · Audit Trail</text>
+  <text x="185" y="501" text-anchor="middle" font-size="9" fill="#8B949E">Persistent history across sessions</text>
+
+  <!-- AbuseIPDB -->
+  <rect x="325" y="435" width="250" height="70" rx="6" fill="#0D1117" stroke="#FF8C00" stroke-width="1.5"/>
+  <text x="450" y="458" text-anchor="middle" font-size="12" font-weight="600" fill="#FF8C00">🌐 AbuseIPDB API</text>
+  <text x="450" y="474" text-anchor="middle" font-size="9" fill="#8B949E">Real-time IP Confidence Scores (0–100)</text>
+  <text x="450" y="488" text-anchor="middle" font-size="9" fill="#8B949E">Abuse Categories · ISP Metadata · Country</text>
+  <text x="450" y="501" text-anchor="middle" font-size="9" fill="#8B949E">Dynamic blacklist vs static blacklist advantage</text>
+
+  <!-- Outputs -->
+  <rect x="590" y="435" width="250" height="70" rx="6" fill="#0D1117" stroke="#3FB950" stroke-width="1.5"/>
+  <text x="715" y="458" text-anchor="middle" font-size="12" font-weight="600" fill="#3FB950">📤 Response Actions</text>
+  <text x="715" y="474" text-anchor="middle" font-size="9" fill="#8B949E">📄 PDF Incident Report (FPDF auto-generated)</text>
+  <text x="715" y="488" text-anchor="middle" font-size="9" fill="#8B949E">📧 SMTP Email Alert (Critical threshold)</text>
+  <text x="715" y="501" text-anchor="middle" font-size="9" fill="#8B949E">📊 CSV / JSON Export</text>
+
+  <!-- ── LAYER 5: LOG SOURCES ──────────────────────────────────── -->
+  <text x="450" y="528" text-anchor="middle" font-size="9" fill="#8B949E" letter-spacing="3">LOG INPUT SOURCES</text>
+
+  <rect x="155" y="533" width="130" height="44" rx="5" fill="#0D1117" stroke="#58A6FF" stroke-width="1"/>
+  <text x="220" y="553" text-anchor="middle" font-size="10" font-weight="600" fill="#58A6FF">📄 Apache Logs</text>
+  <text x="220" y="567" text-anchor="middle" font-size="9" fill="#8B949E">HTTP access logs</text>
+
+  <rect x="300" y="533" width="130" height="44" rx="5" fill="#0D1117" stroke="#58A6FF" stroke-width="1"/>
+  <text x="365" y="553" text-anchor="middle" font-size="10" font-weight="600" fill="#58A6FF">📋 Syslog Records</text>
+  <text x="365" y="567" text-anchor="middle" font-size="9" fill="#8B949E">System event logs</text>
+
+  <rect x="445" y="533" width="130" height="44" rx="5" fill="#0D1117" stroke="#58A6FF" stroke-width="1"/>
+  <text x="510" y="553" text-anchor="middle" font-size="10" font-weight="600" fill="#58A6FF">✏️ Manual Paste</text>
+  <text x="510" y="567" text-anchor="middle" font-size="9" fill="#8B949E">Raw text input</text>
+
+  <rect x="590" y="533" width="130" height="44" rx="5" fill="#0D1117" stroke="#58A6FF" stroke-width="1"/>
+  <text x="655" y="553" text-anchor="middle" font-size="10" font-weight="600" fill="#58A6FF">📁 File Upload</text>
+  <text x="655" y="567" text-anchor="middle" font-size="9" fill="#8B949E">.log / .txt files</text>
+
+  <!-- Arrows from log sources up to threat hunting -->
+  <line x1="310" y1="533" x2="430" y2="280" stroke="#58A6FF" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,3"/>
+  <line x1="510" y1="533" x2="470" y2="280" stroke="#58A6FF" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,3"/>
+
+  <!-- Footer -->
+  <line x1="0" y1="598" x2="900" y2="598" stroke="#30363D" stroke-width="0.5"/>
+  <text x="450" y="614" text-anchor="middle" font-size="9" fill="#8B949E">Built by Sushanth Banuka, CH.Laxma Reddy, D.Kiran Kumar · Malla Reddy University · Hyderabad · 2026</text>
+</svg>

@@ -1,0 +1,11 @@
+Date: 2026-01-25 14:00:00
+Server: Web-Gateway-01
+Log Level: WARNING
+Message: Suspicious connection attempt detected.
+
+Details:
+Source IP: 192.168.1.105
+Destination URL: http://phishing-attempt.com/login
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+
+Action Required: Investigate immediately.

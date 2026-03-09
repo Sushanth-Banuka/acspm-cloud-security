@@ -1,0 +1,24 @@
+Subject: URGENT: Account Security Alert - Unusual Sign-in Activity
+From: support-security-team@suspicious-domain.net
+To: employee@company.com
+Date: Mon, 26 Jan 2026 09:15:30 +0000
+
+Dear User,
+
+We detected an unauthorized login attempt to your workstation from an unrecognized device.
+
+Source IP: 203.0.113.5  (Suspicious)
+Source IP: 192.168.1.105 (Internal Match)
+Backup IP: 8.8.8.8 (Google DNS - Safe)
+
+Please review the logs below immediately.
+
+--- SYSTEM LOGS ---
+[09:14:22] Failed connection from 198.51.100.23 port 443
+[09:14:25] Redirecting to http://login-update-secure.com/auth?id=555
+[09:14:30] Email server connected to mail.bad-actor.org
+
+If this was not you, please click the link above or contact admin@suspicious-domain.net.
+
+Regards,
+IT Security Dept.
