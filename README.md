@@ -171,11 +171,11 @@ streamlit run dashboard/app.py
 
 This tool is the technical implementation of the following peer-reviewed research paper:
 
-> **"Autonomous Cloud Security Posture Management (CSPM): An Event-Driven Framework for Real-Time Misconfiguration Remediation"**
+> AUTONOMOUS CLOUD SECURITY POSTURE MANAGEMENT (ACSPM): An Event Driven Framwork For Real Time Misconfiguration Remedation
+> 
 > Mr. Sushanth Banuka
-> Computer Science & Engineering — Cybersecurity, Malla Reddy University, Hyderabad, India — 2026
 >
-> *[Link to published paper — placeholder]*
+> https://ijnrd.org/papers/IJNRD2603361.pdf
 
 
 
